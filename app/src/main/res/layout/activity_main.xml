@@ -7,10 +7,51 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pcwc2000.myshop.myshop.MainActivity">
+    tools:context="pcwc2000.myshop.myshop.MainActivity"
+    android:background="@drawable/bg700">
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:background="#96db8a8a">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:id="@+id/imageView"
+            android:src="@drawable/restaurant512" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/h1" />
+
+        <EditText
+            android:layout_width="@dimen/edit"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="User" />
+
+        <EditText
+            android:layout_width="@dimen/edit"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:hint="Password" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="clickLogin"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true" />
+
 </RelativeLayout>
